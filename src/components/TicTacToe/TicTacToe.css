@@ -1,0 +1,163 @@
+.container{
+    text-align: center;
+
+}
+
+.title{
+    margin-top: 40px;
+    color: rgb(250, 243, 28);
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    align-items: center;
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+.turn-message{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color:rgb(51, 243, 237);
+    font-size: 40px;
+    font-family: fantasy; 
+}
+.player-icon {
+    color: yellow;
+}
+
+.reset {
+    padding: 0.9em 1.8em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+    color: transparent;
+    border: 3px solid #ff0;
+    font-size: 14px;
+    position: relative;
+    font-family: inherit;
+    background: transparent;
+}
+   
+.reset::before {
+    content: "reset";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #363636;
+    color: #ff0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+   
+.reset:hover::before {
+    left: 100%;
+    transform: scale(0) rotateY(360deg);
+    opacity: 0;
+   }
+   
+.reset::after {
+    content: "reset";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #363636;
+    color: #ff0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    transform: scale(0) rotateY(0deg);
+    opacity: 0;
+}
+   
+.reset:hover::after {
+    left: 0;
+    transform: scale(1) rotateY(360deg);
+    opacity: 1;
+}
+
+
+
+.board{
+    height:450px;
+    width:600px;
+    display: flex;
+    margin:auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxes {
+   width: 100px; /* Adjust the width as needed */
+   height: 100px; /* Adjust the height as needed */
+   border: 2px solid rgb(44, 198, 203); /* Add a solid border with the desired color */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 24px;
+   cursor: pointer;
+   transition: background-color 0.3s ease; /* Add a transition for a smooth hover effect */
+   user-select: none;
+}
+   
+.boxes::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.8);
+    filter: blur(25px);
+    background: #6a6666;
+    background: var(--background);
+    transition: opacity .5s;
+}
+   
+.boxes-info {
+    --color: #5b5858;
+    background: var(--color);
+    color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    border-radius: .7rem;
+}
+   
+.boxes .title {
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+   
+   /*Hover*/
+.boxes:hover::after {
+    opacity: 0;
+}
+   
+.boxes:hover .boxes-info {
+    color: #696363;
+    transition: color 1s;
+}
+
+.boxes img{
+    margin-top: 10px;
+    height: 60px;
+    width: 60px;
+}
+.title img{
+    padding: 20px 20px;
+    height: 50px;
+}
+
+   
