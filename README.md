@@ -1,10 +1,28 @@
-# Getting Started with Create React App
+### `About this React Application` 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. It contains a simple tic tac toe game that taking X and O in turns.
 
-## Available Scripts
+![image](https://github.com/yuktha-c-reddy/tictactoe/assets/70469290/d84a1a85-58f1-44bd-95e4-f0c7263d5609)
+
+3. It has an audio effect for each tile .
+4. It had an audio effect for reset button.
+
+![image](https://github.com/yuktha-c-reddy/tictactoe/assets/70469290/6675999e-7291-403b-80fe-6f1d4d463ad2)
+
+4. On pressing on reset , the game starts from the beginning.
+
+![image](https://github.com/yuktha-c-reddy/tictactoe/assets/70469290/d45b3021-6eef-401a-8d01-65d54427176b)
+
+5. It displays the winner or if its a draw.
+6. It also has hover features.
+
+![image](https://github.com/yuktha-c-reddy/tictactoe/assets/70469290/72509798-4329-404e-b0fc-0995e600eaa3)
+
+
+### `Getting Started`
 
 In the project directory, you can run:
+### `cd to project dir`
 
 ### `npm start`
 
@@ -68,3 +86,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
